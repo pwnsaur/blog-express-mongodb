@@ -1,0 +1,36 @@
+{
+  "name": "blog-node-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "esbuild": "./scripts/build.js",
+    "start": "nodemon app.js",
+    "watch": "esbuild server.js  --platform=node  --outfile=out.js --bundle --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwnsaur/blog-node-express.git"
+  },
+  "keywords": [ ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pwnsaur/blog-node-express/issues"
+  },
+  "homepage": "https://github.com/pwnsaur/blog-node-express#readme",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "ejs": "^3.1.8",
+    "esbuild": "^0.15.7",
+    "express": "^4.18.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0"
+  }
+}
